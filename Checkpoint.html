@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Checkpoint1</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background: #f7f7f7;
+    color: #333;
+  }
+  nav {
+    background: #333;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  header, main, footer {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  table, th, td {
+    border: 1px solid #999;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  form input, form textarea, form select {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  form button:hover {
+    background-color: #555;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#about">À propos</a>
+  <a href="#work">Travail</a>
+  <a href="#cv">CV</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header id="accueil">
+  <h1>Voici mo</h1>
+  <p>Découvrez mon travail, mon parcours et contactez-moi !</p>
+</header>
+
+<main>
+
+  <section id="about" aria-label="Section à propos">
+    <h2>À propos</h2>
+    <p>Je suis développeur web passionné, spécialisé en front-end et back-end. Voici une courte vidéo qui présente mon travail :</p>
+    <video controls>
+      <source src="video/presentation.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+  </section>
+
+  <section id="work" aria-label="Section travail">
+    <h2>Travail</h2>
+    <p>Voici une liste de mes projets récents :</p>
+    <ul>
+      <li>Site e-commerce responsive</li>
+      <li>Application mobile de gestion de tâches</li>
+      <li>Portfolio personnel</li>
+      <li>API REST pour gestion de données</li>
+    </ul>
+  </section>
+
+  <section id="cv" aria-label="Section CV">
+    <h2>Mon CV</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Année</th>
+          <th>Expérience</th>
+          <th>Compétences</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024</td>
+          <td>Développeur Front-end chez WebCorp</td>
+          <td>React, HTML, CSS, JS</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Stage développeur Back-end chez API Solutions</td>
+          <td>Node.js, Express, MongoDB</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Formation Développeur Web</td>
+          <td>HTML, CSS, JS, PHP</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contact" aria-label="Section contact">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Sujet :</label>
+      <select id="subject" name="subject" required>
+        <option value="">-- Choisissez un sujet --</option>
+        <option value="projet">Projet</option>
+        <option value="emploi">Emploi</option>
+        <option value="autre">Autre</option>
+      </select>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Mon Portfolio - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
